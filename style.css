@@ -1,0 +1,300 @@
+/* Utility */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    margin-top: 100px;
+    padding: 50px;
+    background-color: #eaeaea;
+    border-radius: 10px;
+    box-shadow: 1px 1px 500px rgba(0, 0, 0, .2);
+}
+
+h2 {
+    font-size: 40px;
+    padding: 10px;
+    font-weight: 600;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.tombol {
+    border-radius: 40px;
+    text-transform: uppercase;
+    padding: 3px 30px
+}
+
+/* Navbar */
+.navbar {
+    padding: 15px;
+    position: relative;
+    z-index: 1;
+}
+
+.navbar .container .navbar-brand {
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-size: 20px;
+    color: black !important;
+    font-weight: 800;
+}
+
+.navbar .container ul li a {
+    margin-right: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    color: black !important;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+/* Jumbotron */
+.jumbotron {
+    background-image: url(img/bg/background-jumbotron.jpg);
+    height: 350px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    position: relative;
+}
+
+.jumbotron .container {
+    position: relative;
+    z-index: 1;
+}
+
+.jumbotron::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.4));
+}
+
+.jumbotron .display-4 {
+    margin-top: 50px;
+    font-size: 30px;
+    font-weight: 100;
+    color: white;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+}
+
+.jumbotron .lead {
+    font-size: 20px;
+    font-weight: 100;
+    color: white;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+}
+
+.jumbotron .lead span {
+    font-weight: 600;
+}
+
+/* Sidebar */
+.sidebar {
+    padding: 15px;
+    margin-top: -100px;
+    background-color: white;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, .7);
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.sidebar img {
+    width: 80px;
+}
+
+.sidebar h4 {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.sidebar p {
+    font-size: 15px;
+    font-weight: 100;
+}
+
+.sidebar .tombol {
+    font-size: 8px;
+    margin-top: -15px;
+}
+
+/* About */
+.about-content {
+    margin-top: 30px;
+}
+
+.about-content img {
+    width: 100%;
+    height: 250px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, .7);
+    border-radius: 10px;
+}
+
+.about-content h4 {
+    margin-top: 20px;
+    font-size: 30px;
+    letter-spacing: 2px;
+    font-weight: 100;
+    font-family: 'The Nautigal', cursive;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, .7);
+}
+
+.about-content span {
+    font-weight: 600;
+    color: #dc3545;
+}
+
+.about-content p {
+    font-size: 12px;
+    color: #acacac;
+    font-style: italic;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, .7);
+}
+
+/* Achive */
+
+.achive-content {
+    margin-top: 30px;
+}
+
+.achive-content img {
+    width: 100%;
+    height: 200px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, .7);
+    cursor: pointer;
+}
+
+/* Contact */
+.contact .contact-head {
+    color: white !important;
+}
+
+.contact-content img {
+    width: 100%;
+    height: 217px;
+    border-radius: 3px;
+}
+
+.contact-content .info-card {
+    font-family: 'The Nautigal', cursive;
+    font-size: 25px;
+    text-align: center;
+}
+
+.contact-content .contact-list {
+    margin-top: 20px;
+}
+
+.contact-content button {
+    width: 100%;
+}
+
+.contact-bg {
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0)), url(img/bg/background-contact.jpg);
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+}
+/* end Contact */
+
+/* Footer */
+footer {
+    width: 100%;
+    background-color: #acacac;
+    padding: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+footer a {
+    text-decoration: none;
+    color: #dc3545;
+}
+
+footer a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+/* DESKTOP VERSION */
+@media (min-width: 992px) {
+
+    .navbar .container .navbar-brand {
+        color: white !important;
+    }
+
+    .navbar .container ul li a {
+        color: white !important;
+        text-transform: uppercase;
+    }
+
+    .navbar:hover {
+        background-color: rgba(0, 0, 0, .7);
+        transition: 1.5s;
+    }
+
+    .navbar .container ul li a:hover::after {
+        content: '';
+        display: block;
+        width: 50%;
+        border-bottom: 3px solid white;
+        border-radius: 50%;
+        margin: auto;
+        margin-bottom: -8px;
+    }
+
+    .jumbotron {
+        margin-top: -70px;
+        height: 540px;
+    }
+
+    .jumbotron .display-4 {
+        margin-top: 130px;
+        font-size: 60px;
+    }
+
+    .jumbotron .lead {
+        font-size: 40px;
+    }
+
+    .sidebar {
+        margin-top: -100ssspx;
+    }
+
+    .sidebar img {
+        width: 80px;
+    }
+
+    .sidebar h4 {
+        font-size: 15px;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    .sidebar p {
+        font-size: 15px;
+        font-weight: 100;
+    }
+
+    .about-content h4 {
+        font-size: 60px;
+    }
+
+    .about-content p {
+        font-size: 15px;
+    }
+
+    .contact-content .contact-list {
+        margin-top: 0;
+    }
+
+}
